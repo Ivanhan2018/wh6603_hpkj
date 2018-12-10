@@ -67,6 +67,9 @@
     <ClCompile Include="Stdafx.cpp">
       <Filter>其它</Filter>
     </ClCompile>
+    <ClCompile Include="TraceServiceManager.cpp">
+      <Filter>服务引擎</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="KernelEngineHead.h">
@@ -107,6 +110,9 @@
     </ClInclude>
     <ClInclude Include="Stdafx.h">
       <Filter>其它</Filter>
+    </ClInclude>
+    <ClInclude Include="TraceServiceManager.h">
+      <Filter>服务引擎</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

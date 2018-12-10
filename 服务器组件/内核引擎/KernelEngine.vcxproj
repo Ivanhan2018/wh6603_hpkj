@@ -216,8 +216,8 @@ copy /y ..\..\运行\Release\$(TargetFileName) ..\..\发布组件\服务器组�
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>../../../发布组件/服务器组件/Release/Unicode/KernelEngine.dll</OutputFile>
+      <AdditionalDependencies>Ws2_32.lib;ServiceCore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../运行/ServReleaseUnicode/KernelEngine.dll</OutputFile>
       <ModuleDefinitionFile>.\KernelEngine.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -225,6 +225,7 @@ copy /y ..\..\运行\Release\$(TargetFileName) ..\..\发布组件\服务器组�
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <ImportLibrary>../../链接库/unicode/KernelEngine.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>../../链接库/unicode</AdditionalLibraryDirectories>
     </Link>
     <Midl>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -249,13 +250,14 @@ copy /y ..\..\运行\Release\$(TargetFileName) ..\..\发布组件\服务器组�
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>../../../运行/Debug/Unicode/KernelEngineD.dll</OutputFile>
+      <AdditionalDependencies>Ws2_32.lib;ServiceCoreD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../运行/ServDebugUnicode/KernelEngineD.dll</OutputFile>
       <ModuleDefinitionFile>.\KernelEngineD.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
-      <ImportLibrary>../../链接库/KernelEngineD.lib</ImportLibrary>
+      <ImportLibrary>../../链接库/Unicode/KernelEngineD.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>..\..\链接库\Unicode</AdditionalLibraryDirectories>
     </Link>
     <Midl>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -285,6 +287,7 @@ copy /y ..\..\运行\Release\$(TargetFileName) ..\..\发布组件\服务器组�
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="TraceServiceManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="KernelEngineHead.h" />
@@ -300,6 +303,7 @@ copy /y ..\..\运行\Release\$(TargetFileName) ..\..\发布组件\服务器组�
     <ClInclude Include="AsynchronismEngine.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Stdafx.h" />
+    <ClInclude Include="TraceServiceManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="KernelEngine.rc" />

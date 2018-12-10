@@ -39,6 +39,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "比赛服务", "服务器组件\比赛服务\GameMatchServer.vcxproj", "{CA071FF5-97BF-42C3-99AF-FE8F8A0F0AF2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "内核引擎", "服务器组件\内核引擎\KernelEngine.vcxproj", "{F5D6B929-08E3-43DA-9F39-941A859B3FD8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B1320037-89DD-4F99-A628-69DC200DFA05} = {B1320037-89DD-4F99-A628-69DC200DFA05}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "网络服务", "客户端组件\网络服务\NetworkService.vcxproj", "{40C0CCCB-BB89-4198-A607-2410FA125EDC}"
 EndProject

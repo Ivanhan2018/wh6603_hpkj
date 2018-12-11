@@ -1680,7 +1680,7 @@ void CQiXingCai::OnBnClickedBtnChqAdd()
 			strHaoMa = strQian + _T(",") + strBai + _T(",") + strShi + _T(",") + strGe;
 
 
-			zhushu = _MAX(strQian.GetLength(),1) * _MAX(strBai.GetLength(),1) * _MAX(strShi.GetLength(),1) * _MAX(strGe.GetLength(),1);
+			zhushu = max(strQian.GetLength(),1) * max(strBai.GetLength(),1) * max(strShi.GetLength(),1) * max(strGe.GetLength(),1);
 		}
 	}
 	else if (QiXingCai_SanDing == m_gameKind) 
@@ -1737,7 +1737,7 @@ void CQiXingCai::OnBnClickedBtnChqAdd()
 
 			strHaoMa = strQian + _T(",") + strBai + _T(",") + strShi + _T(",") + strGe;
 
-			zhushu = _MAX(strQian.GetLength(),1) * _MAX(strBai.GetLength(),1) * _MAX(strShi.GetLength(),1) * _MAX(strGe.GetLength(),1);
+			zhushu = max(strQian.GetLength(),1) * max(strBai.GetLength(),1) * max(strShi.GetLength(),1) * max(strGe.GetLength(),1);
 		}
 
 
@@ -1789,7 +1789,7 @@ void CQiXingCai::OnBnClickedBtnChqAdd()
 
 			strHaoMa = strQian + _T(",") + strBai + _T(",") + strShi + _T(",") + strGe ;
 
-			zhushu = _MAX(strQian.GetLength(),1) * _MAX(strBai.GetLength(),1) * _MAX(strShi.GetLength(),1) * _MAX(strGe.GetLength(),1);
+			zhushu = max(strQian.GetLength(),1) * max(strBai.GetLength(),1) * max(strShi.GetLength(),1) * max(strGe.GetLength(),1);
 		}
 
 	}
@@ -1847,7 +1847,7 @@ void CQiXingCai::OnBnClickedBtnChqAdd()
 
 			strHaoMa = strQian + _T(",") + strBai + _T(",") + strShi + _T(",") + strGe;
 
-			zhushu = _MAX(strQian.GetLength(),1) * _MAX(strBai.GetLength(),1) * _MAX(strShi.GetLength(),1) * _MAX(strGe.GetLength(),1);
+			zhushu = max(strQian.GetLength(),1) * max(strBai.GetLength(),1) * max(strShi.GetLength(),1) * max(strGe.GetLength(),1);
 		}
 	}
 	else if (QiXingCai_LiangZiXian == m_gameKind) 
@@ -7426,7 +7426,7 @@ int CQiXingCai::GetQXCZhushu(int nTypeID,int nKindID)
 			return m_singlezhushu;
 		} 
 
-		m_singlezhushu = _MAX(strQian.GetLength(),1) * _MAX(strBai.GetLength(),1) * _MAX(strShi.GetLength(),1) * _MAX(strGe.GetLength(),1);
+		m_singlezhushu = max(strQian.GetLength(),1) * max(strBai.GetLength(),1) * max(strShi.GetLength(),1) * max(strGe.GetLength(),1);
 	}
 	else if (m_gameKind == QiXingCai_SanDing)
 	{
@@ -7453,7 +7453,7 @@ int CQiXingCai::GetQXCZhushu(int nTypeID,int nKindID)
 			return m_singlezhushu;
 		}
 
-		m_singlezhushu = _MAX(strQian.GetLength(),1) * _MAX(strBai.GetLength(),1) * _MAX(strShi.GetLength(),1) * _MAX(strGe.GetLength(),1);
+		m_singlezhushu = max(strQian.GetLength(),1) * max(strBai.GetLength(),1) * max(strShi.GetLength(),1) * max(strGe.GetLength(),1);
 
 	}
 	else if(m_gameKind == QiXingCai_SiDing)
@@ -7481,7 +7481,7 @@ int CQiXingCai::GetQXCZhushu(int nTypeID,int nKindID)
 			return m_singlezhushu;
 		}
 
-		m_singlezhushu = _MAX(strQian.GetLength(),1) * _MAX(strBai.GetLength(),1) * _MAX(strShi.GetLength(),1) * _MAX(strGe.GetLength(),1);
+		m_singlezhushu = max(strQian.GetLength(),1) * max(strBai.GetLength(),1) * max(strShi.GetLength(),1) * max(strGe.GetLength(),1);
 
 	}
 	else if(m_gameKind == QiXingCai_YiDing)
@@ -7509,7 +7509,7 @@ int CQiXingCai::GetQXCZhushu(int nTypeID,int nKindID)
 			return m_singlezhushu;
 		}
 
-		m_singlezhushu = _MAX(strQian.GetLength(),1) * _MAX(strBai.GetLength(),1) * _MAX(strShi.GetLength(),1) * _MAX(strGe.GetLength(),1);
+		m_singlezhushu = max(strQian.GetLength(),1) * max(strBai.GetLength(),1) * max(strShi.GetLength(),1) * max(strGe.GetLength(),1);
 
 	}
 	else if (m_gameKind == QiXingCai_LiangZiXian)

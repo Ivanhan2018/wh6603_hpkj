@@ -4,8 +4,8 @@
 //单件模式类指针
 CBassMusicManager* CBassMusicManager::_instance = NULL;
 
-std::map<int, tagMusicStream> CBassMusicManager::_mapPlayingStream;
-std::map<int, tagMusicStream> CBassMusicManager::_mapNeedDeleteStream;
+std::map<int, CBassMusicManager::tagMusicStream> CBassMusicManager::_mapPlayingStream;
+std::map<int, CBassMusicManager::tagMusicStream> CBassMusicManager::_mapNeedDeleteStream;
 
 CBassMusicManager::CBassMusicManager(void)
 {

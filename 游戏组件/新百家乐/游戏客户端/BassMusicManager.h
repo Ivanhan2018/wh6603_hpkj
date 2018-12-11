@@ -1,19 +1,10 @@
 #pragma once
 
-#pragma comment(lib, "bass/bass.lib")
+#pragma comment(lib, "./bass/bass.lib")
 
 #include "bass/bass.h"
 #include <map>
 #include <assert.h>
-
-///声音资源结构体
-typedef struct{
-	///HSTREAM
-	HSTREAM hStream;
-	///是否循环播放, 注意：此参数不能与bDeleteWhenStop同时为true
-	bool bLoop;
-} tagMusicStream;
-
 
 /**
 * @brief 声音资源管理类
@@ -22,6 +13,15 @@ typedef struct{
 */
 class CBassMusicManager
 {
+public:
+	///声音资源结构体
+typedef struct{
+	///HSTREAM
+	HSTREAM hStream;
+	///是否循环播放, 注意：此参数不能与bDeleteWhenStop同时为true
+	bool bLoop;
+} tagMusicStream;
+
 public:
 	///析构函数
 	~CBassMusicManager(void);

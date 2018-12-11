@@ -1,6 +1,6 @@
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "网络服务", "WHSocket.vcproj", "{487AE71A-160E-49E0-A1EF-6D115F6B8A3F}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "网络服务", "WHSocket.vcxproj", "{487AE71A-160E-49E0-A1EF-6D115F6B8A3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,19 +7,19 @@
 #endif
 
 #ifndef WINVER
-#define WINVER 0x0500
+#define WINVER 0x0501
 #endif
 
 #ifndef _WIN32_WINNT
-#define _WIN32_WINNT 0x0400
+#define _WIN32_WINNT 0x0501
 #endif
 
 #ifndef _WIN32_WINDOWS
-#define _WIN32_WINDOWS 0x0410
+#define _WIN32_WINDOWS 0x0501
 #endif
 
 #ifndef _WIN32_IE
-#define _WIN32_IE 0x0400
+#define _WIN32_IE 0x0501
 #endif
 
 #define _ATL_ATTRIBUTES
@@ -68,7 +68,7 @@ typedef void * POINTER_64 PVOID64;
 #else
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/WHImageD.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/DownLoadD.lib")
-	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/ServiceCore.lib")
+	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/ServiceCoreD.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/SkinControlD.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/ShareControlD.lib")
 #endif

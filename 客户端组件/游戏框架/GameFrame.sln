@@ -1,6 +1,6 @@
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "сно╥©Р╪э", "GameFrame.vcproj", "{EF2F0AF7-DC00-454B-9EC7-CC7887AA0137}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "сно╥©Р╪э", "GameFrame.vcxproj", "{EF2F0AF7-DC00-454B-9EC7-CC7887AA0137}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,5 +1,5 @@
 #include "StdAfx.h"
-#include "Winable.h"
+#include <WinUser.h>//#include "Winable.h"
 #include "Resource.h"
 #include "PasswordControl.h"
 

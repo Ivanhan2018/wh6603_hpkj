@@ -7,19 +7,19 @@
 #endif
 
 #ifndef WINVER
-#define WINVER 0x0500
+#define WINVER 0x0501
 #endif
 
 #ifndef _WIN32_WINNT
-#define _WIN32_WINNT 0x0500
+#define _WIN32_WINNT 0x0501
 #endif
 
 #ifndef _WIN32_WINDOWS
-#define _WIN32_WINDOWS 0x0410
+#define _WIN32_WINDOWS 0x0501
 #endif
 
 #ifndef _WIN32_IE
-#define _WIN32_IE 0x0400
+#define _WIN32_IE 0x0501
 #endif
 
 #define _ATL_ATTRIBUTES
@@ -55,9 +55,9 @@ typedef void * POINTER_64 PVOID64;
 	#pragma comment (lib,"../../Á´½Ó¿â/Ansi/SkinControl.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Ansi/ShareControl.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Ansi/PlatformData.lib")
-	#pragma comment (lib,"../../Á´½Ó¿â/Ansi/GameProperty.lib")
+	//#pragma comment (lib,"../../Á´½Ó¿â/Ansi/GameProperty.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Ansi/AvatarControl.lib")
-	#pragma comment (lib,"../../Á´½Ó¿â/Ansi/VideoService.lib")
+	//#pragma comment (lib,"../../Á´½Ó¿â/Ansi/VideoService.lib")
 #else
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/WHImage.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/GameEngine.lib")
@@ -65,9 +65,9 @@ typedef void * POINTER_64 PVOID64;
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/SkinControl.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/ShareControl.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/PlatformData.lib")
-	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/GameProperty.lib")
+	//#pragma comment (lib,"../../Á´½Ó¿â/Unicode/GameProperty.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/AvatarControl.lib")
-	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/VideoService.lib")
+	//#pragma comment (lib,"../../Á´½Ó¿â/Unicode/VideoService.lib")
 #endif
 #else
 #ifndef _UNICODE
@@ -77,9 +77,9 @@ typedef void * POINTER_64 PVOID64;
 	#pragma comment (lib,"../../Á´½Ó¿â/Ansi/SkinControlD.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Ansi/ShareControlD.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Ansi/PlatformDataD.lib")
-	#pragma comment (lib,"../../Á´½Ó¿â/Ansi/GamePropertyD.lib")
+	//#pragma comment (lib,"../../Á´½Ó¿â/Ansi/GamePropertyD.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Ansi/AvatarControlD.lib")
-	#pragma comment (lib,"../../Á´½Ó¿â/Ansi/VideoServiceD.lib")
+	//#pragma comment (lib,"../../Á´½Ó¿â/Ansi/VideoServiceD.lib")
 #else
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/WHImageD.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/GameEngineD.lib")
@@ -87,9 +87,9 @@ typedef void * POINTER_64 PVOID64;
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/SkinControlD.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/ShareControlD.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/PlatformDataD.lib")
-	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/GamePropertyD.lib")
+	//#pragma comment (lib,"../../Á´½Ó¿â/Unicode/GamePropertyD.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/AvatarControlD.lib")
-	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/VideoServiceD.lib")
+	//#pragma comment (lib,"../../Á´½Ó¿â/Unicode/VideoServiceD.lib")
 #endif
 #endif
 

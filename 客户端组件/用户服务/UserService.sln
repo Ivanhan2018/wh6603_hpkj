@@ -1,29 +1,25 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "用户服务", "UserService.vcproj", "{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "用户服务", "UserService.vcxproj", "{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}"
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Debug_Unicode = Debug_Unicode
-		Release = Release
-		Release_Unicode = Release_Unicode
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_Unicode|Win32 = Debug_Unicode|Win32
+		Debug|Win32 = Debug|Win32
+		Release_Unicode|Win32 = Release_Unicode|Win32
+		Release|Win32 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ProjectDependencies) = postSolution
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Debug_Unicode|Win32.ActiveCfg = Debug_Unicode|Win32
+		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Debug_Unicode|Win32.Build.0 = Debug_Unicode|Win32
+		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Debug|Win32.Build.0 = Debug|Win32
+		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Release_Unicode|Win32.ActiveCfg = Release_Unicode|Win32
+		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Release_Unicode|Win32.Build.0 = Release_Unicode|Win32
+		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Release|Win32.ActiveCfg = Release|Win32
+		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Debug.ActiveCfg = Debug|Win32
-		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Debug.Build.0 = Debug|Win32
-		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Debug_Unicode.ActiveCfg = Debug_Unicode|Win32
-		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Debug_Unicode.Build.0 = Debug_Unicode|Win32
-		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Release.ActiveCfg = Release|Win32
-		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Release.Build.0 = Release|Win32
-		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Release_Unicode.ActiveCfg = Release_Unicode|Win32
-		{E8BB4ED2-44D1-4541-A6B4-C05C201FB856}.Release_Unicode.Build.0 = Release_Unicode|Win32
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

@@ -44,8 +44,8 @@
 #pragma warning(disable:4192)
 
 //FALSH ∂®“Â
-#import "Flash.ocx" named_guids
-
+//#import "Flash.ocx" named_guids
+#import "Flash.ocx"  named_guids, exclude("IFlashObjectInterface"), exclude("IDispatchEx")
 //////////////////////////////////////////////////////////////////////////////////
 
 #ifdef _UNICODE

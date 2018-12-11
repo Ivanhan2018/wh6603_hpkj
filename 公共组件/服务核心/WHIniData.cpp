@@ -56,7 +56,7 @@ LPCTSTR CWHIniData::ReadEncryptString(LPCTSTR pszItem, LPCTSTR pszSubItem, LPCTS
 {
 	//效验状态
 	ASSERT(m_szIniFile[0]!=0);
-	ASSERT(wMaxCount<=MAX_SOURCE_LEN);
+	ASSERT(wMaxCount<=MAX_ENCRYPT_LEN/*MAX_SOURCE_LEN*/);
 
 	//设置结果
 	if (wMaxCount>0) pszString[0]=0;

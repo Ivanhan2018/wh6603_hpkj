@@ -65,7 +65,7 @@ typedef void * POINTER_64 PVOID64;
 	#pragma comment (lib,"../../Á´½Ó¿â/Ansi/ServiceCoreD.lib")
 #else
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/WHImageD.lib")
-	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/ServiceCore.lib")
+	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/ServiceCoreD.lib")
 #endif
 #endif
 

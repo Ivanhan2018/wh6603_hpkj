@@ -119,7 +119,7 @@ enum	enMoShi{
 #else
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/WHImageD.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/DownLoadD.lib")
-	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/ServiceCore.lib")
+	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/ServiceCoreD.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/SkinControlD.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/ShareControlD.lib")
 	#pragma comment (lib,"../../Á´½Ó¿â/Unicode/PlatformDataD.lib")

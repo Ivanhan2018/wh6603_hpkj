@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CardControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectSound.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgListen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawFunc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawSiceWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClientDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClientView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOption.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScore.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveCardItem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UserActionItem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CardControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectSound.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgListen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawFunc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawSiceWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClientDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClientView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOption.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveCardItem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameClient.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\GameClient.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\GAME_LOGO.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\VIEW_BACK.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_START.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_GIVEUP.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_CHIHU.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\GAME_SCORE.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\HUANG_ZHUANG.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_START_TRUSTEE.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_STOP_TRUSTEE.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_SCORE_CLOSE.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\VIEW_CENTER.BMP">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SICE1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SICE2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SICE3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SICE4.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SICE5.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SICE6.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SICE7.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SICE8.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SICE9.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SICE10.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SICE11.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SICE12.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SICE_BACK.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_LISTEN.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\CONTROL_BACK.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_CHI.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_PENG.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_GANG.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_CCHI.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_LCHI.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_RCHI.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\DISC.png" />
+    <Image Include="res\ACTIONANI.png" />
+    <Image Include="res\ARROW.png" />
+    <Image Include="res\Trustee.png" />
+    <Image Include="res\DRAW_WIND.png" />
+    <Image Include="res\CARD_HEAP_DOUBLE_H.png" />
+    <Image Include="res\CARD_HEAP_DOUBLE_V.png" />
+    <Image Include="res\CARD_HEAP_SINGLE_H.png" />
+    <Image Include="res\CARD_HEAP_SINGLE_V.png" />
+    <Image Include="res\CARD_TABLE_BOTTOM.png" />
+    <Image Include="res\CARD_TABLE_LEFT.png" />
+    <Image Include="res\CARD_TABLE_RIGHT.png" />
+    <Image Include="res\CARD_TABLE_TOP.png" />
+    <Image Include="res\CARD_USER_BOTTOM.png" />
+    <Image Include="res\CARD_USER_BOTTOMBIG.png" />
+    <Image Include="res\CARD_USER_LEFT.png" />
+    <Image Include="res\CARD_USER_RIGHT.png" />
+    <Image Include="res\CARD_USER_TOP.png" />
+    <Image Include="res\USER_TOP_SHADOW.PNG" />
+    <Image Include="res\USER_LEFT_SHADOW.PNG" />
+    <Image Include="res\USER_BOTTOM_SHADOW.PNG" />
+    <Image Include="res\USER_RIGHT_SHADOW.PNG" />
+    <Image Include="res\TABLE_TOP_SHADOW.PNG" />
+    <Image Include="res\TABLE_LEFT_SHADOW.PNG" />
+    <Image Include="res\TABLE_BOTTOM_SHADOW.PNG" />
+    <Image Include="res\TABLE_RIGHT_SHADOW.PNG" />
+    <Image Include="res\HEAP_SINGLE_V_SHADOW.PNG" />
+    <Image Include="res\HEAP_SINGLE_H_SHADOW.PNG" />
+    <Image Include="res\HEAP_DOUBLE_V_SHADOW.PNG" />
+    <Image Include="res\HEAP_DOUBLE_H_SHADOW.PNG" />
+    <Image Include="res\LISTEN_FLAG.png" />
+    <Image Include="res\DIRECTION_OPERATE.PNG" />
+    <Image Include="res\CARD_USER_BOTTOM_GRAYED.PNG" />
+    <Image Include="res\TIME_NUMBER.PNG" />
+    <Image Include="res\TIME_BACK.PNG" />
+    <Image Include="res\USER_READY.PNG" />
+    <Image Include="res\WAIT_TIP.png" />
+    <Image Include="res\ACTION_BACK.png" />
+    <Image Include="res\USER_FLAG.png" />
+    <Image Include="res\OUT_CARD_TIP.png" />
+    <Image Include="res\ZI_MO.PNG" />
+    <Image Include="res\FANG_PAO.png" />
+    <Image Include="res\PAIKUANG.png" />
+    <Image Include="res\ZHUANGSAI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CARD_CUR.cur">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\麻将声音\SELECT.WAV" />
+    <Media Include="res\麻将声音\OUT_CARD.WAV" />
+    <Media Include="res\麻将声音\GAME_WIN.WAV" />
+    <Media Include="res\麻将声音\GAME_WARN.WAV" />
+    <Media Include="res\麻将声音\GAME_START.WAV" />
+    <Media Include="res\麻将声音\GAME_LOST.WAV" />
+    <Media Include="res\麻将声音\GAME_END.WAV" />
+    <Media Include="res\麻将声音\男\CHI.WAV" />
+    <Media Include="res\麻将声音\男\PENG.WAV" />
+    <Media Include="res\麻将声音\男\CHI_HU.WAV" />
+    <Media Include="res\麻将声音\男\GANG.WAV" />
+    <Media Include="res\麻将声音\女\CHI.WAV" />
+    <Media Include="res\麻将声音\女\PENG.WAV" />
+    <Media Include="res\麻将声音\女\CHI_HU.WAV" />
+    <Media Include="res\麻将声音\女\GANG.WAV" />
+    <Media Include="res\麻将声音\男\W_9.WAV" />
+    <Media Include="res\麻将声音\男\W_8.WAV" />
+    <Media Include="res\麻将声音\男\W_7.WAV" />
+    <Media Include="res\麻将声音\男\W_6.WAV" />
+    <Media Include="res\麻将声音\男\W_5.WAV" />
+    <Media Include="res\麻将声音\男\W_4.WAV" />
+    <Media Include="res\麻将声音\男\W_3.WAV" />
+    <Media Include="res\麻将声音\男\W_2.WAV" />
+    <Media Include="res\麻将声音\男\W_1.WAV" />
+    <Media Include="res\麻将声音\男\T_9.WAV" />
+    <Media Include="res\麻将声音\男\T_8.WAV" />
+    <Media Include="res\麻将声音\男\T_7.WAV" />
+    <Media Include="res\麻将声音\男\T_6.WAV" />
+    <Media Include="res\麻将声音\男\T_5.WAV" />
+    <Media Include="res\麻将声音\男\T_4.WAV" />
+    <Media Include="res\麻将声音\男\T_3.WAV" />
+    <Media Include="res\麻将声音\男\T_2.WAV" />
+    <Media Include="res\麻将声音\男\T_1.WAV" />
+    <Media Include="res\麻将声音\男\S_9.WAV" />
+    <Media Include="res\麻将声音\男\S_8.WAV" />
+    <Media Include="res\麻将声音\男\S_7.WAV" />
+    <Media Include="res\麻将声音\男\S_6.WAV" />
+    <Media Include="res\麻将声音\男\S_5.WAV" />
+    <Media Include="res\麻将声音\男\S_4.WAV" />
+    <Media Include="res\麻将声音\男\S_3.WAV" />
+    <Media Include="res\麻将声音\男\S_2.WAV" />
+    <Media Include="res\麻将声音\男\S_1.WAV" />
+    <Media Include="res\麻将声音\男\F_1.WAV" />
+    <Media Include="res\麻将声音\男\F_2.WAV" />
+    <Media Include="res\麻将声音\男\F_3.WAV" />
+    <Media Include="res\麻将声音\男\F_4.WAV" />
+    <Media Include="res\麻将声音\男\F_5.WAV" />
+    <Media Include="res\麻将声音\男\F_6.WAV" />
+    <Media Include="res\麻将声音\男\F_7.WAV" />
+    <Media Include="res\麻将声音\女\W_9.WAV" />
+    <Media Include="res\麻将声音\女\W_8.WAV" />
+    <Media Include="res\麻将声音\女\W_7.WAV" />
+    <Media Include="res\麻将声音\女\W_6.WAV" />
+    <Media Include="res\麻将声音\女\W_5.WAV" />
+    <Media Include="res\麻将声音\女\W_4.WAV" />
+    <Media Include="res\麻将声音\女\W_3.WAV" />
+    <Media Include="res\麻将声音\女\W_2.WAV" />
+    <Media Include="res\麻将声音\女\W_1.WAV" />
+    <Media Include="res\麻将声音\女\T_9.WAV" />
+    <Media Include="res\麻将声音\女\T_8.WAV" />
+    <Media Include="res\麻将声音\女\T_7.WAV" />
+    <Media Include="res\麻将声音\女\T_6.WAV" />
+    <Media Include="res\麻将声音\女\T_5.WAV" />
+    <Media Include="res\麻将声音\女\T_4.WAV" />
+    <Media Include="res\麻将声音\女\T_3.WAV" />
+    <Media Include="res\麻将声音\女\T_2.WAV" />
+    <Media Include="res\麻将声音\女\T_1.WAV" />
+    <Media Include="res\麻将声音\女\S_9.WAV" />
+    <Media Include="res\麻将声音\女\S_8.WAV" />
+    <Media Include="res\麻将声音\女\S_7.WAV" />
+    <Media Include="res\麻将声音\女\S_6.WAV" />
+    <Media Include="res\麻将声音\女\S_4.WAV" />
+    <Media Include="res\麻将声音\女\S_3.WAV" />
+    <Media Include="res\麻将声音\女\S_2.WAV" />
+    <Media Include="res\麻将声音\女\S_1.WAV" />
+    <Media Include="res\麻将声音\女\F_1.WAV" />
+    <Media Include="res\麻将声音\女\F_2.WAV" />
+    <Media Include="res\麻将声音\女\F_3.WAV" />
+    <Media Include="res\麻将声音\女\F_4.WAV" />
+    <Media Include="res\麻将声音\女\F_5.WAV" />
+    <Media Include="res\麻将声音\女\F_6.WAV" />
+    <Media Include="res\麻将声音\女\F_7.WAV" />
+    <Media Include="res\麻将声音\DRAW_SICE.wav" />
+    <Media Include="res\麻将声音\女\S_5.WAV" />
+    <Media Include="res\麻将声音\男\REPLACE.WAV" />
+    <Media Include="res\麻将声音\女\REPLACE.WAV" />
+    <Media Include="res\麻将声音\男\TING.WAV" />
+    <Media Include="res\麻将声音\女\TING.WAV" />
+    <Media Include="res\麻将声音\SEND_CARD.WAV" />
+  </ItemGroup>
+</Project>

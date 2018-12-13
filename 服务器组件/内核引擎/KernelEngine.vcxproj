@@ -214,6 +214,7 @@ copy /y ..\..\运行\Release\$(TargetFileName) ..\..\发布组件\服务器组�
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
       <AdditionalDependencies>Ws2_32.lib;ServiceCore.lib;%(AdditionalDependencies)</AdditionalDependencies>

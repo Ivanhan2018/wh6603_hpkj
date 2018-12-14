@@ -1,0 +1,956 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Unicode|Win32">
+      <Configuration>Debug_Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Manager|Win32">
+      <Configuration>Release_Manager</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Unicode|Win32">
+      <Configuration>Release_Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>游戏广场</ProjectName>
+    <ProjectGuid>{3E5290EE-EC1B-4591-BB6F-B453BB65F471}</ProjectGuid>
+    <RootNamespace>游戏广场</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>../../../运行/Debug/Ansi/GamePlaza.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\..\发布组件\客户端组件\Debug\Ansi
+copy /y ..\..\..\运行\Debug\Ansi\$(TargetFileName) ..\..\..\发布组件\客户端组件\Debug\Ansi\$(TargetFileName)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>../../../运行/Release/Ansi/GamePlaza.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\..\发布组件\客户端组件\Release\Ansi
+copy /y ..\..\..\运行\Release\Ansi\$(TargetFileName) ..\..\..\发布组件\客户端组件\Release\Ansi\$(TargetFileName)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>All</AssemblerOutput>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>../../运行/ClientDebugUnicode/GamePlaza.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;RELEASE_MANAGER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>All</AssemblerOutput>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>../../运行/ClientReleaseUnicode/GamePlaza.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Manifest>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <VerboseOutput>true</VerboseOutput>
+    </Manifest>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;RELEASE_MANAGER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>../../运行/Release/Unicode/GameManager.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="3D.cpp" />
+    <ClCompile Include="AccountsControl.cpp" />
+    <ClCompile Include="BeiJingKuai8.cpp" />
+    <ClCompile Include="BeiJingPK10.cpp" />
+    <ClCompile Include="BmpUtil.cpp" />
+    <ClCompile Include="ButtonEx.cpp" />
+    <ClCompile Include="ChongQingSSC.cpp" />
+    <ClCompile Include="ChongZhiDlg.cpp" />
+    <ClCompile Include="Comm.cpp" />
+    <ClCompile Include="Other\Custsite.cpp" />
+    <ClCompile Include="DlgAddtional.cpp" />
+    <ClCompile Include="DlgDownLoad.cpp" />
+    <ClCompile Include="DlgEnquire.cpp" />
+    <ClCompile Include="DlgFandian.cpp" />
+    <ClCompile Include="DlgLockMachine.cpp" />
+    <ClCompile Include="DlgLogon.cpp" />
+    <ClCompile Include="DlgServerManager.cpp" />
+    <ClCompile Include="DlgServerPassWork.cpp" />
+    <ClCompile Include="DlgService.cpp" />
+    <ClCompile Include="DlgServiceIndividual.cpp" />
+    <ClCompile Include="DlgServiceItem.cpp" />
+    <ClCompile Include="DlgServicePassword.cpp" />
+    <ClCompile Include="DlgStatus.cpp" />
+    <ClCompile Include="FanDian.cpp" />
+    <ClCompile Include="FenPeiPeie.cpp" />
+    <ClCompile Include="GamePlaza.cpp" />
+    <ClCompile Include="GameRule.cpp" />
+    <ClCompile Include="Other\GfxGroupEdit.cpp" />
+    <ClCompile Include="Other\GfxOutBarCtrl.cpp" />
+    <ClCompile Include="GlobalUnits.cpp" />
+    <ClCompile Include="GuangDong11X5.cpp" />
+    <ClCompile Include="HeaderCtrlCl.cpp" />
+    <ClCompile Include="HuiYuanChkxjtzhDlg.cpp" />
+    <ClCompile Include="HuiYuanChzhLogDlg.cpp" />
+    <ClCompile Include="HuiYuanDlg.cpp" />
+    <ClCompile Include="HuiYuanHyshjDlg.cpp" />
+    <ClCompile Include="HuiYuanHyxxDlg.cpp" />
+    <ClCompile Include="HuiYuanTjxjDlg.cpp" />
+    <ClCompile Include="HuiYuanTxLogDlg.cpp" />
+    <ClCompile Include="HuiYuanXjtzhtjDlg.cpp" />
+    <ClCompile Include="HuiYuanXjYouXiJlDlg.cpp" />
+    <ClCompile Include="HuiYuanYkLogDlg.cpp" />
+    <ClCompile Include="HuiYuanYktjDlg.cpp" />
+    <ClCompile Include="HuiYuanYxtjDlg.cpp" />
+    <ClCompile Include="HuoDongDaili.cpp" />
+    <ClCompile Include="HuoDongDaliBaoDlg.cpp" />
+    <ClCompile Include="HuoDongDlg.cpp" />
+    <ClCompile Include="HuoDongHuanLeLingDlg.cpp" />
+    <ClCompile Include="HuoDongZaJinDanDlg.cpp" />
+    <ClCompile Include="HuodongZhuanzhuan.cpp" />
+    <ClCompile Include="Other\IDispimp.cpp" />
+    <ClCompile Include="ImageButton.cpp" />
+    <ClCompile Include="ImgRioButton.cpp" />
+    <ClCompile Include="ImgStatic.cpp" />
+    <ClCompile Include="ListCtrlCl.cpp" />
+    <ClCompile Include="LiuHeCai.cpp" />
+    <ClCompile Include="LogFile.cpp" />
+    <ClCompile Include="xml\Markup.cpp" />
+    <ClCompile Include="MD5Checksum\MD5Checksum.cpp" />
+    <ClCompile Include="MessageDlg.cpp" />
+    <ClCompile Include="MissionList.cpp" />
+    <ClCompile Include="MissionLogon.cpp" />
+    <ClCompile Include="MyCheckBox.cpp" />
+    <ClCompile Include="MyStatic.cpp" />
+    <ClCompile Include="NumerButton.cpp" />
+    <ClCompile Include="OpenRecord.cpp" />
+    <ClCompile Include="PaiLie3.cpp" />
+    <ClCompile Include="Ping.cpp" />
+    <ClCompile Include="PlatformEvent.cpp" />
+    <ClCompile Include="PlatformFrame.cpp" />
+    <ClCompile Include="PlatformPublicize.cpp" />
+    <ClCompile Include="PlazaViewItem.cpp" />
+    <ClCompile Include="ProcessManager.cpp" />
+    <ClCompile Include="QiXingCai.cpp" />
+    <ClCompile Include="QrTzhDlg.cpp" />
+    <ClCompile Include="QuKuanDlg.cpp" />
+    <ClCompile Include="ServerListData.cpp" />
+    <ClCompile Include="ServerViewItem.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TableViewFrame.cpp" />
+    <ClCompile Include="TextButton.cpp" />
+    <ClCompile Include="TiShiDlg.cpp" />
+    <ClCompile Include="TzhLogDlg.cpp" />
+    <ClCompile Include="TzhxxDlg.cpp" />
+    <ClCompile Include="WndGameTypeCtrl.cpp" />
+    <ClCompile Include="WndTopNews.cpp" />
+    <ClCompile Include="WndUserInfoCtrl.cpp" />
+    <ClCompile Include="WndValidateCode.cpp" />
+    <ClCompile Include="XgfdDlg.cpp" />
+    <ClCompile Include="XingYun28.cpp" />
+    <ClCompile Include="ZhangHuBaseInfoDlg.cpp" />
+    <ClCompile Include="ZhangHuChzhLogDlg.cpp" />
+    <ClCompile Include="ZhangHuDlg.cpp" />
+    <ClCompile Include="ZhangHuQPYkDlg.cpp" />
+    <ClCompile Include="ZhangHuShZhTkZhhDlg.cpp" />
+    <ClCompile Include="ZhangHuTxLogDlg.cpp" />
+    <ClCompile Include="ZhangHuTzhLogDlg.cpp" />
+    <ClCompile Include="ZhangHuXgmmDlg.cpp" />
+    <ClCompile Include="ZhangHuYkLogDlg.cpp" />
+    <ClCompile Include="ZhangHuYkMXDlg.cpp" />
+    <ClCompile Include="ZhangHuZhhbhDlg.cpp" />
+    <ClCompile Include="ZhuanhuanDlg.cpp" />
+    <ClCompile Include="ZhuanZhangDlg.cpp" />
+    <ClCompile Include="Other\GfxPopupMenu.cpp" />
+    <ClCompile Include="GridCtrl\GridCell.cpp" />
+    <ClCompile Include="GridCtrl\GridCellBase.cpp" />
+    <ClCompile Include="GridCtrl\GridCellCheck.cpp" />
+    <ClCompile Include="GridCtrl\GridCellCombo.cpp" />
+    <ClCompile Include="GridCtrl\GridCellDateTime.cpp" />
+    <ClCompile Include="GridCtrl\GridCellNumeric.cpp" />
+    <ClCompile Include="GridCtrl\GridCtrl.cpp" />
+    <ClCompile Include="GridCtrl\GridDropTarget.cpp" />
+    <ClCompile Include="GridCtrl\GridURLCell.cpp" />
+    <ClCompile Include="GridCtrl\InPlaceEdit.cpp" />
+    <ClCompile Include="GridCtrl\TitleTip.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3D.h" />
+    <ClInclude Include="AccountsControl.h" />
+    <ClInclude Include="BeiJingKuai8.h" />
+    <ClInclude Include="BeiJingPK10.h" />
+    <ClInclude Include="BmpUtil.h" />
+    <ClInclude Include="ButtonEx.h" />
+    <ClInclude Include="ChongQingSSC.h" />
+    <ClInclude Include="ChongZhiDlg.h" />
+    <ClInclude Include="comm.h" />
+    <ClInclude Include="Other\Custsite.h" />
+    <ClInclude Include="DlgAddtional.h" />
+    <ClInclude Include="DlgDownLoad.h" />
+    <ClInclude Include="DlgEnquire.h" />
+    <ClInclude Include="DlgFandian.h" />
+    <ClInclude Include="DlgLockMachine.h" />
+    <ClInclude Include="DlgLogon.h" />
+    <ClInclude Include="DlgServerManager.h" />
+    <ClInclude Include="DlgServerPassWork.h" />
+    <ClInclude Include="DlgService.h" />
+    <ClInclude Include="DlgServiceIndividual.h" />
+    <ClInclude Include="DlgServiceItem.h" />
+    <ClInclude Include="DlgStatus.h" />
+    <ClInclude Include="DlgTablePassword.h" />
+    <ClInclude Include="FanDian.h" />
+    <ClInclude Include="FenPeiPeie.h" />
+    <ClInclude Include="GamePlaza.h" />
+    <ClInclude Include="GamePlazaHead.h" />
+    <ClInclude Include="GameRule.h" />
+    <ClInclude Include="Other\GfxOutBarCtrl.h" />
+    <ClInclude Include="Other\GfxPopupMenu.h" />
+    <ClInclude Include="GlobalUnits.h" />
+    <ClInclude Include="GuangDong11X5.h" />
+    <ClInclude Include="HapiDump.h" />
+    <ClInclude Include="HeaderCtrlCl.h" />
+    <ClInclude Include="HuiYuanChkxjtzhDlg.h" />
+    <ClInclude Include="HuiYuanChzhLogDlg.h" />
+    <ClInclude Include="HuiYuanDlg.h" />
+    <ClInclude Include="HuiYuanHyshjDlg.h" />
+    <ClInclude Include="HuiYuanHyxxDlg.h" />
+    <ClInclude Include="HuiYuanTjxjDlg.h" />
+    <ClInclude Include="HuiYuanTxLogDlg.h" />
+    <ClInclude Include="HuiYuanXjtzhtjDlg.h" />
+    <ClInclude Include="HuiYuanXjYouXiJlDlg.h" />
+    <ClInclude Include="HuiYuanYkLogDlg.h" />
+    <ClInclude Include="HuiYuanYktjDlg.h" />
+    <ClInclude Include="HuiYuanYxtjDlg.h" />
+    <ClInclude Include="HuoDongDaili.h" />
+    <ClInclude Include="HuoDongDaliBaoDlg.h" />
+    <ClInclude Include="HuoDongDlg.h" />
+    <ClInclude Include="HuoDongHuanLeLingDlg.h" />
+    <ClInclude Include="HuoDongZaJinDanDlg.h" />
+    <ClInclude Include="HuodongZhuanzhuan.h" />
+    <ClInclude Include="Other\IDispimp.h" />
+    <ClInclude Include="ImageButton.h" />
+    <ClInclude Include="ImgRioButton.h" />
+    <ClInclude Include="ImgStatic.h" />
+    <ClInclude Include="ListCtrlCl.h" />
+    <ClInclude Include="LiuHeCai.h" />
+    <ClInclude Include="LogFile.h" />
+    <ClInclude Include="xml\Markup.h" />
+    <ClInclude Include="MessageDlg.h" />
+    <ClInclude Include="MissionList.h" />
+    <ClInclude Include="MissionLogon.h" />
+    <ClInclude Include="MyCheckBox.h" />
+    <ClInclude Include="MyStatic.h" />
+    <ClInclude Include="NumerButton.h" />
+    <ClInclude Include="OpenRecord.h" />
+    <ClInclude Include="PaiLie3.h" />
+    <ClInclude Include="Ping.h" />
+    <ClInclude Include="PlatformEvent.h" />
+    <ClInclude Include="PlatformFrame.h" />
+    <ClInclude Include="PlatformPublicize.h" />
+    <ClInclude Include="PlazaViewItem.h" />
+    <ClInclude Include="ProcessManager.h" />
+    <ClInclude Include="QiXingCai.h" />
+    <ClInclude Include="QrTzhDlg.h" />
+    <ClInclude Include="QuKuanDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ServerListData.h" />
+    <ClInclude Include="ServerViewItem.h" />
+    <ClInclude Include="Stdafx.h" />
+    <ClInclude Include="TableViewFrame.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TextButton.h" />
+    <ClInclude Include="TiShiDlg.h" />
+    <ClInclude Include="TzhLogDlg.h" />
+    <ClInclude Include="TzhxxDlg.h" />
+    <ClInclude Include="WndGameTypeCtrl.h" />
+    <ClInclude Include="WndTopNews.h" />
+    <ClInclude Include="WndUserInfoCtrl.h" />
+    <ClInclude Include="WndValidateCode.h" />
+    <ClInclude Include="XgfdDlg.h" />
+    <ClInclude Include="XingYun28.h" />
+    <ClInclude Include="ZhangHuBaseInfoDlg.h" />
+    <ClInclude Include="ZhangHuChzhLogDlg.h" />
+    <ClInclude Include="ZhangHuDlg.h" />
+    <ClInclude Include="ZhangHuQPYkDlg.h" />
+    <ClInclude Include="ZhangHuShZhTkZhhDlg.h" />
+    <ClInclude Include="ZhangHuTxLogDlg.h" />
+    <ClInclude Include="ZhangHuTzhLogDlg.h" />
+    <ClInclude Include="ZhangHuXgmmDlg.h" />
+    <ClInclude Include="ZhangHuYkLogDlg.h" />
+    <ClInclude Include="ZhangHuYkMXDlg.h" />
+    <ClInclude Include="ZhangHuZhhbhDlg.h" />
+    <ClInclude Include="ZhuanhuanDlg.h" />
+    <ClInclude Include="ZhuanZhangDlg.h" />
+    <ClInclude Include="GridCtrl\CellRange.h" />
+    <ClInclude Include="GridCtrl\GridCell.h" />
+    <ClInclude Include="GridCtrl\GridCellBase.h" />
+    <ClInclude Include="GridCtrl\GridCellCheck.h" />
+    <ClInclude Include="GridCtrl\GridCellCombo.h" />
+    <ClInclude Include="GridCtrl\GridCellDateTime.h" />
+    <ClInclude Include="GridCtrl\GridCellNumeric.h" />
+    <ClInclude Include="GridCtrl\GridCtrl.h" />
+    <ClInclude Include="GridCtrl\GridDropTarget.h" />
+    <ClInclude Include="GridCtrl\GridURLCell.h" />
+    <ClInclude Include="GridCtrl\InPlaceEdit.h" />
+    <ClInclude Include="GridCtrl\MemDC.h" />
+    <ClInclude Include="GridCtrl\TitleTip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\Frame_affiche\AFFICHE_BL.bmp" />
+    <Image Include="Res\Frame_affiche\AFFICHE_BM.bmp" />
+    <Image Include="Res\Frame_affiche\AFFICHE_BR.bmp" />
+    <Image Include="Res\FRAME_AFFICHE\AFFICHE_GROUP.bmp" />
+    <Image Include="Res\Frame_affiche\AFFICHE_ML.bmp" />
+    <Image Include="Res\Frame_affiche\AFFICHE_MR.bmp" />
+    <Image Include="Res\FRAME_AFFICHE\AFFICHE_NEWS.png" />
+    <Image Include="Res\Frame_affiche\AFFICHE_TITLE.png" />
+    <Image Include="Res\Frame_affiche\AFFICHE_TL.bmp" />
+    <Image Include="Res\Frame_affiche\AFFICHE_TM.bmp" />
+    <Image Include="Res\Frame_affiche\AFFICHE_TR.bmp" />
+    <Image Include="Res\GAME_SSC\ARROW_CONTROL.png" />
+    <Image Include="Res\LiuHeCai\ball.png" />
+    <Image Include="Res\PLATFORM_FRAME\bg_fandian.png" />
+    <Image Include="Res\Plaza_enquire\BK_ENQUIRE_BUTTON.bmp" />
+    <Image Include="Res\Platform_frame\BK_GAME_LIST.bmp" />
+    <Image Include="Res\Server_list\BK_LIST.bmp" />
+    <Image Include="Res\Platform_frame\BK_NAVIGATION.bmp" />
+    <Image Include="Res\Platform_frame\BK_NAVIGATION1.bmp" />
+    <Image Include="Res\Platform_frame\BK_NAVIGATION2.bmp" />
+    <Image Include="Res\Platform_frame\BK_NAVIGATION3.bmp" />
+    <Image Include="Res\Platform_frame\BK_NAVIGATION4.bmp" />
+    <Image Include="Res\Platform_frame\BK_NAVIGATION5.bmp" />
+    <Image Include="Res\Platform_frame\BK_NAVIGATION6.bmp" />
+    <Image Include="Res\Platform_frame\BK_NAVIGATION7.bmp" />
+    <Image Include="Res\Item_frame\BK_PLATFORM_1.bmp" />
+    <Image Include="Res\Item_frame\BK_PLATFORM_2.bmp" />
+    <Image Include="Res\Item_frame\BK_PLATFORM_3.bmp" />
+    <Image Include="Res\User_info\BK_USER_INFO.bmp" />
+    <Image Include="Res\User_info\BK_USER_INFO_SET.bmp" />
+    <Image Include="Res\Server_frame\BK_USER_LIST.bmp" />
+    <Image Include="Res\Web_browser\BROWSER_BL.bmp" />
+    <Image Include="Res\Web_browser\BROWSER_BM.bmp" />
+    <Image Include="Res\Web_browser\BROWSER_BR.bmp" />
+    <Image Include="Res\Web_browser\BROWSER_ML.bmp" />
+    <Image Include="Res\Web_browser\BROWSER_MR.bmp" />
+    <Image Include="Res\Web_browser\BROWSER_TL.bmp" />
+    <Image Include="Res\Web_browser\BROWSER_TM.bmp" />
+    <Image Include="Res\Web_browser\BROWSER_TR.bmp" />
+    <Image Include="Res\Web_browser\BT_BROWSER.bmp" />
+    <Image Include="Res\USER_INFO\BT_Change.bmp" />
+    <Image Include="Res\USER_INFO\BT_Change.png" />
+    <Image Include="Res\Server_chat\BT_CHAT_BUTTON_1.bmp" />
+    <Image Include="Res\Server_chat\BT_CHAT_BUTTON_1.png" />
+    <Image Include="Res\Server_chat\BT_CHAT_BUTTON_2.bmp" />
+    <Image Include="Res\Server_chat\BT_CHAT_BUTTON_2.png" />
+    <Image Include="Res\Server_chat\BT_CHAT_BUTTON_3.bmp" />
+    <Image Include="Res\Server_chat\BT_CHAT_BUTTON_3.png" />
+    <Image Include="Res\Server_chat\BT_CHAT_BUTTON_4.bmp" />
+    <Image Include="Res\Server_chat\BT_CHAT_BUTTON_4.png" />
+    <Image Include="Res\Server_chat\BT_CHAT_SHORT.bmp" />
+    <Image Include="Res\Platform_frame\BT_CLOSE.bmp" />
+    <Image Include="Res\Platform_frame\Bt_close.png" />
+    <Image Include="Res\Server_table\BT_CLOSE_SERVER.bmp" />
+    <Image Include="Res\Plaza_logon\BT_COMBOBOX.bmp" />
+    <Image Include="Res\GameCaiPiao\BT_COMBOBOX.bmp" />
+    <Image Include="Res\Down_load\BT_DOWN_LOAD_LAST.bmp" />
+    <Image Include="Res\Down_load\BT_DOWN_LOAD_NEXT.bmp" />
+    <Image Include="Res\Plaza_enquire\BT_ENQUIRE_CANCEL.bmp" />
+    <Image Include="Res\Plaza_enquire\BT_ENQUIRE_CANCEL.png" />
+    <Image Include="Res\Plaza_enquire\BT_ENQUIRE_PLAZA.bmp" />
+    <Image Include="Res\Plaza_enquire\BT_ENQUIRE_PLAZA.png" />
+    <Image Include="Res\Plaza_enquire\BT_ENQUIRE_SERVER.bmp" />
+    <Image Include="Res\Plaza_enquire\BT_ENQUIRE_SERVER.png" />
+    <Image Include="Res\Plaza_enquire\BT_ENQUIRE_SWITCH.bmp" />
+    <Image Include="Res\Plaza_enquire\BT_ENQUIRE_SWITCH.png" />
+    <Image Include="Res\Server_table\BT_ENTER_GAME.bmp" />
+    <Image Include="Res\Frame_plaza\BT_ENTER_KIND.png" />
+    <Image Include="Res\Frame_plaza\Bt_enter_server.png" />
+    <Image Include="Res\Platform_frame\BT_GAME_LIST_HIDE.png" />
+    <Image Include="Res\Platform_frame\BT_GAME_LIST_SHOW.png" />
+    <Image Include="Res\Web_browser\BT_HOME.png" />
+    <Image Include="Res\Frame_plaza\BT_INSTALL_GAME.png" />
+    <Image Include="Res\LiuHeCai\BT_JETTON_1.bmp" />
+    <Image Include="Res\LiuHeCai\BT_JETTON_10.bmp" />
+    <Image Include="Res\LiuHeCai\BT_JETTON_100.BMP" />
+    <Image Include="Res\LiuHeCai\BT_JETTON_1000.BMP" />
+    <Image Include="Res\LiuHeCai\BT_JETTON_5.bmp" />
+    <Image Include="Res\LiuHeCai\BT_JETTON_50.bmp" />
+    <Image Include="Res\Frame_plaza\BT_KIND_ITEM_VIEW.bmp" />
+    <Image Include="Res\Web_browser\Bt_last.png" />
+    <Image Include="Res\Frame_plaza\BT_LAST_KIND.bmp" />
+    <Image Include="Res\Frame_plaza\BT_LAST_KIND.png" />
+    <Image Include="Res\Frame_plaza\BT_LAST_SERVER.png" />
+    <Image Include="Res\Server_list\BT_LOCK_LIST.png" />
+    <Image Include="Res\Plaza_logon\BT_LOGON.bmp" />
+    <Image Include="Res\Plaza_logon\BT_LOGON_ENTER.png" />
+    <Image Include="Res\Plaza_logon\BT_LOGON_ITEM.bmp" />
+    <Image Include="Res\Plaza_logon\BT_LOGON_ITEM.png" />
+    <Image Include="Res\Plaza_logon\BT_LOGON_LINK.bmp" />
+    <Image Include="Res\Plaza_logon\BT_LOGON_LINK_1.png" />
+    <Image Include="Res\Plaza_logon\BT_LOGON_LINK_2.png" />
+    <Image Include="Res\Plaza_logon\BT_LOGON_LINK_3.png" />
+    <Image Include="Res\Plaza_logon\BT_LOGON_LINK_4.png" />
+    <Image Include="Res\Plaza_logon\BT_LOGON_QUIT.bmp" />
+    <Image Include="Res\PLAZA_LOGON\BT_LOGON_QUIT.png" />
+    <Image Include="Res\Plaza_logon\BT_LOGON_REGISTER.png" />
+    <Image Include="Res\Platform_frame\BT_MAX.bmp" />
+    <Image Include="Res\Platform_frame\BT_MIN.bmp" />
+    <Image Include="Res\PLATFORM_FRAME\BT_MUTE.bmp" />
+    <Image Include="Res\Platform_frame\Bt_navigation_1.png" />
+    <Image Include="Res\Platform_frame\BT_NAVIGATION_2.png" />
+    <Image Include="Res\Platform_frame\BT_NAVIGATION_3.png" />
+    <Image Include="Res\Platform_frame\BT_NAVIGATION_4.png" />
+    <Image Include="Res\Platform_frame\BT_NAVIGATION_5.png" />
+    <Image Include="Res\Platform_frame\BT_NAVIGATION_6.png" />
+    <Image Include="Res\Platform_frame\BT_NAVIGATION_7.png" />
+    <Image Include="Res\PLATFORM_FRAME\BT_NET.bmp" />
+    <Image Include="Res\Web_browser\BT_NEXT.png" />
+    <Image Include="Res\Frame_plaza\BT_NEXT_KIND.bmp" />
+    <Image Include="Res\Frame_plaza\BT_NEXT_KIND.png" />
+    <Image Include="Res\Frame_plaza\BT_NEXT_SERVER.png" />
+    <Image Include="Res\PLAZA_LOGON\BT_ONLINE.png" />
+    <Image Include="Res\Item_frame\BT_PLATFORM_1.png" />
+    <Image Include="Res\Item_frame\BT_PLATFORM_2.png" />
+    <Image Include="Res\Item_frame\BT_PLATFORM_3.png" />
+    <Image Include="Res\Server_table\BT_QUIT_SERVER.bmp" />
+    <Image Include="Res\Server_table\BT_QUIT_SERVER.png" />
+    <Image Include="Res\Plaza_logon\BT_REGISTER.bmp" />
+    <Image Include="Res\Plaza_logon\BT_REGISTER_CLOSE.bmp" />
+    <Image Include="Res\Plaza_logon\BT_REGISTER_ENTER.bmp" />
+    <Image Include="Res\Plaza_logon\BT_REGISTER_ENTER.png" />
+    <Image Include="Res\Plaza_logon\BT_REGISTER_QUIT.bmp" />
+    <Image Include="Res\Plaza_logon\BT_REGISTER_QUIT.png" />
+    <Image Include="Res\Web_browser\BT_RELOAD.png" />
+    <Image Include="Res\Plaza_logon\BT_REMEMBER.bmp" />
+    <Image Include="Res\PLAZA_LOGON\BT_REMEMBER.png" />
+    <Image Include="Res\Platform_frame\BT_RESORE.bmp" />
+    <Image Include="Res\Frame_plaza\BT_RETURN_HALL.png" />
+    <Image Include="Res\Server_chat\BT_SEND_CHAT.bmp" />
+    <Image Include="Res\Server_passwork\BT_SERVER_CANCEL.bmp" />
+    <Image Include="Res\Item_frame\BT_SERVER_ITEM_VIEW.bmp" />
+    <Image Include="Res\Frame_plaza\BT_SERVER_ITEM_VIEW.bmp" />
+    <Image Include="Res\Server_passwork\BT_SERVER_OK.bmp" />
+    <Image Include="Res\Platform_frame\BT_SKIN.bmp" />
+    <Image Include="Res\PLATFORM_FRAME\BT_SOUND.bmp" />
+    <Image Include="Res\Dlg_status\BT_STATUS_CANCEL.bmp" />
+    <Image Include="Res\Web_browser\BT_STOP.png" />
+    <Image Include="Res\Server_table\BT_TABLE_BUTTON_1.bmp" />
+    <Image Include="Res\Server_table\BT_TABLE_BUTTON_1.png" />
+    <Image Include="Res\Server_table\BT_TABLE_BUTTON_2.bmp" />
+    <Image Include="Res\Server_table\BT_TABLE_BUTTON_2.png" />
+    <Image Include="Res\Server_table\BT_TABLE_BUTTON_3.bmp" />
+    <Image Include="Res\Server_table\BT_TABLE_BUTTON_3.png" />
+    <Image Include="Res\Server_table\BT_TABLE_BUTTON_4.bmp" />
+    <Image Include="Res\Server_table\BT_TABLE_BUTTON_4.png" />
+    <Image Include="Res\Server_table\BT_TABLE_BUTTON_5.bmp" />
+    <Image Include="Res\Server_table\BT_TABLE_BUTTON_5.png" />
+    <Image Include="Res\Server_table\BT_TABLE_BUTTON_6.bmp" />
+    <Image Include="Res\Server_table\BT_TABLE_BUTTON_6.png" />
+    <Image Include="Res\Server_table\BT_TABLE_BUTTON_7.bmp" />
+    <Image Include="Res\Server_table\BT_TABLE_BUTTON_7.png" />
+    <Image Include="Res\PLATFORM_FRAME\BT_ToCaibi.bmp" />
+    <Image Include="Res\PLATFORM_FRAME\BT_ToCaibi.png" />
+    <Image Include="Res\PLATFORM_FRAME\BT_ToJinbi.bmp" />
+    <Image Include="Res\PLATFORM_FRAME\BT_ToJinbi.png" />
+    <Image Include="Res\Server_list\BT_UNLOCK_LIST.png" />
+    <Image Include="Res\User_info\BT_USER_INFO_1.png" />
+    <Image Include="Res\User_info\BT_USER_INFO_2.png" />
+    <Image Include="Res\User_info\BT_USER_INFO_3.png" />
+    <Image Include="Res\User_info\BT_USER_INFO_4.png" />
+    <Image Include="Res\USER_INFO\BT_USER_INFO_5.png" />
+    <Image Include="Res\USER_INFO\BT_USER_INFO_6.png" />
+    <Image Include="Res\USER_INFO\BT_USER_INFO_7.png" />
+    <Image Include="Res\USER_INFO\BT_USER_INFO_8.png" />
+    <Image Include="Res\User_info\BT_USER_INFO_SET.png" />
+    <Image Include="Res\Server_frame\BT_USER_LIST_HIDE.png" />
+    <Image Include="Res\Server_frame\BT_USER_LIST_SHOW.png" />
+    <Image Include="Res\PLAZA_LOGON\BT_USER_YUE.png" />
+    <Image Include="Res\Frame_plaza\BT_VIEW_RULE.png" />
+    <Image Include="Res\Plaza_whisper\BT_WHISPER_BUTTON_1.bmp" />
+    <Image Include="Res\Plaza_whisper\BT_WHISPER_BUTTON_1.png" />
+    <Image Include="Res\Plaza_whisper\BT_WHISPER_BUTTON_2.bmp" />
+    <Image Include="Res\Plaza_whisper\BT_WHISPER_BUTTON_2.png" />
+    <Image Include="Res\Plaza_whisper\BT_WHISPER_BUTTON_3.bmp" />
+    <Image Include="Res\Plaza_whisper\BT_WHISPER_BUTTON_3.png" />
+    <Image Include="Res\Plaza_whisper\BT_WHISPER_HISTORY.bmp" />
+    <Image Include="Res\Plaza_whisper\BT_WHISPER_HISTORY.png" />
+    <Image Include="Res\Plaza_whisper\BT_WHISPER_SEND_CONTROL.bmp" />
+    <Image Include="Res\Plaza_whisper\BT_WHISPER_USER_MENU.bmp" />
+    <Image Include="Res\LiuHeCai\btn_cancel.bmp" />
+    <Image Include="Res\LiuHeCai\btn_fandian.bmp" />
+    <Image Include="Res\LiuHeCai\btn_jetton.bmp" />
+    <Image Include="Res\Server_chat\CHAT_BL.bmp" />
+    <Image Include="Res\Server_chat\CHAT_BM.bmp" />
+    <Image Include="Res\Server_chat\CHAT_BR.bmp" />
+    <Image Include="Res\Server_chat\CHAT_ML.bmp" />
+    <Image Include="Res\Server_chat\CHAT_MR.bmp" />
+    <Image Include="Res\Server_chat\CHAT_TL.bmp" />
+    <Image Include="Res\Server_chat\CHAT_TM.bmp" />
+    <Image Include="Res\Server_chat\CHAT_TR.bmp" />
+    <Image Include="Res\Plaza_whisper\CHAT_WHISPER_BL.bmp" />
+    <Image Include="Res\Plaza_whisper\CHAT_WHISPER_BM.bmp" />
+    <Image Include="Res\Plaza_whisper\CHAT_WHISPER_BR.bmp" />
+    <Image Include="Res\Plaza_whisper\CHAT_WHISPER_ML.bmp" />
+    <Image Include="Res\Plaza_whisper\CHAT_WHISPER_MR.bmp" />
+    <Image Include="Res\Plaza_whisper\CHAT_WHISPER_TL.bmp" />
+    <Image Include="Res\Plaza_whisper\CHAT_WHISPER_TM.bmp" />
+    <Image Include="Res\Plaza_whisper\CHAT_WHISPER_TR.bmp" />
+    <Image Include="Res\GAME_SSC\CloseLottery.bmp" />
+    <Image Include="Res\GAME_SSC\CloseLottery.png" />
+    <Image Include="Res\Plaza_collocate\Collocate_bar_bt.png" />
+    <Image Include="Res\Plaza_collocate\COLLOCATE_BAR_LOGO.png" />
+    <Image Include="Res\CONNECT_STATUS.bmp" />
+    <Image Include="Res\FRAME_PLAZA\del.bmp" />
+    <Image Include="Res\Plaza_enquire\DLG_ENQUIRE_BACK.png" />
+    <Image Include="Res\Server_passwork\DLG_INPUT_PASSWD_BACK.png" />
+    <Image Include="Res\PLAZA_LOGON\DLG_LOGON_BACK.bmp" />
+    <Image Include="Res\Plaza_logon\Dlg_logon_back.png" />
+    <Image Include="Res\Plaza_logon\DLG_REGISTER_BACK.png" />
+    <Image Include="Res\Down_load\DOWN_LOAD_ITEM.bmp" />
+    <Image Include="Res\Down_load\DOWN_LOAD_SCALE.png" />
+    <Image Include="Res\DownLoad.ico" />
+    <Image Include="Res\USER_INFO\flash.bmp" />
+    <Image Include="Res\USER_INFO\flash.png" />
+    <Image Include="Res\LiuHeCai\FLASH_AREA.png" />
+    <Image Include="Res\LiuHeCai\FLASH_TMBS_AREA.png" />
+    <Image Include="Res\LiuHeCai\FLASH_TMDM_AREA.png" />
+    <Image Include="Res\LiuHeCai\FLASH_TMDS_AREA.png" />
+    <Image Include="Res\LiuHeCai\FLASH_TMSX_AREA.png" />
+    <Image Include="Res\PLAZA_LOGON\FORGET_PASS.bmp" />
+    <Image Include="Res\PLAZA_LOGON\FORGET_PASS.png" />
+    <Image Include="Res\PLAZA_LOGON\FORGET_PASS_back.bmp" />
+    <Image Include="Res\FRAME_PLAZA\FRAME_ADD.png" />
+    <Image Include="Res\Frame_affiche\FRAME_AFFICHE_BL.bmp" />
+    <Image Include="Res\Frame_affiche\FRAME_AFFICHE_BM.bmp" />
+    <Image Include="Res\Frame_affiche\FRAME_AFFICHE_BR.bmp" />
+    <Image Include="Res\Frame_affiche\FRAME_AFFICHE_L.bmp" />
+    <Image Include="Res\Frame_affiche\FRAME_AFFICHE_M.bmp" />
+    <Image Include="Res\Frame_affiche\FRAME_AFFICHE_ML.bmp" />
+    <Image Include="Res\Frame_affiche\FRAME_AFFICHE_MR.bmp" />
+    <Image Include="Res\Frame_affiche\FRAME_AFFICHE_R.bmp" />
+    <Image Include="Res\Frame_affiche\FRAME_AFFICHE_TL.bmp" />
+    <Image Include="Res\Frame_affiche\FRAME_AFFICHE_TM.bmp" />
+    <Image Include="Res\Frame_affiche\FRAME_AFFICHE_TR.bmp" />
+    <Image Include="Res\Platform_frame\FRAME_BL.bmp" />
+    <Image Include="Res\Platform_frame\Frame_bl.png" />
+    <Image Include="Res\Platform_frame\FRAME_BM.bmp" />
+    <Image Include="Res\Platform_frame\FRAME_BM.png" />
+    <Image Include="Res\Platform_frame\FRAME_BR.bmp" />
+    <Image Include="Res\Platform_frame\FRAME_BR.png" />
+    <Image Include="Res\Platform_frame\FRAME_ML.bmp" />
+    <Image Include="Res\Platform_frame\FRAME_ML.png" />
+    <Image Include="Res\Platform_frame\FRAME_MR.bmp" />
+    <Image Include="Res\Platform_frame\FRAME_MR.png" />
+    <Image Include="Res\Platform_frame\FRAME_TL.bmp" />
+    <Image Include="Res\Platform_frame\FRAME_TL.png" />
+    <Image Include="Res\Platform_frame\FRAME_TM.bmp" />
+    <Image Include="Res\Platform_frame\FRAME_TM.png" />
+    <Image Include="Res\Platform_frame\FRAME_TR.bmp" />
+    <Image Include="Res\Platform_frame\FRAME_TR.png" />
+    <Image Include="Res\ITEM_FRAME\GAME_ITEM_BACK1.png" />
+    <Image Include="Res\ITEM_FRAME\GAME_ITEM_BACK2.png" />
+    <Image Include="Res\ITEM_FRAME\GAME_ITEM_BACK3.png" />
+    <Image Include="Res\ITEM_FRAME\GAME_ITEM_HOVER.png" />
+    <Image Include="Res\Server_property\GAME_PROPERTY_ITEM.bmp" />
+    <Image Include="Res\Server_property\GAME_PROPERTY_L.bmp" />
+    <Image Include="Res\Server_property\GAME_PROPERTY_M.bmp" />
+    <Image Include="Res\Server_property\GAME_PROPERTY_R.bmp" />
+    <Image Include="Res\Item_frame\GAME_TYPE_ITEM.png" />
+    <Image Include="Res\GamePlaza.ico" />
+    <Image Include="Res\PLATFORM_FRAME\home_btn.bmp" />
+    <Image Include="Res\Frame_plaza\IMAGE_COMPART_LINE.png" />
+    <Image Include="Res\Plaza_logon\IMAGE_LOGON_NOTICE.bmp" />
+    <Image Include="Res\Plaza_logon\IMAGE_REGISTER.bmp" />
+    <Image Include="Res\IMAGE_SEARCH.bmp" />
+    <Image Include="Res\Plaza_whisper\INPUT_WHISPER_BL.bmp" />
+    <Image Include="Res\Plaza_whisper\INPUT_WHISPER_BM.bmp" />
+    <Image Include="Res\Plaza_whisper\INPUT_WHISPER_BR.bmp" />
+    <Image Include="Res\Plaza_whisper\INPUT_WHISPER_ML.bmp" />
+    <Image Include="Res\Plaza_whisper\INPUT_WHISPER_MR.bmp" />
+    <Image Include="Res\Plaza_whisper\INPUT_WHISPER_TL.bmp" />
+    <Image Include="Res\Plaza_whisper\INPUT_WHISPER_TM.bmp" />
+    <Image Include="Res\Plaza_whisper\INPUT_WHISPER_TR.bmp" />
+    <Image Include="Res\Item_frame\ITEM_BACK.bmp" />
+    <Image Include="Res\Item_frame\ITEM_BUTTON.bmp" />
+    <Image Include="Res\Item_frame\ITEM_FRAME_BL.bmp" />
+    <Image Include="Res\Item_frame\ITEM_FRAME_BM.bmp" />
+    <Image Include="Res\Item_frame\ITEM_FRAME_BR.bmp" />
+    <Image Include="Res\Item_frame\ITEM_FRAME_ML.bmp" />
+    <Image Include="Res\Item_frame\ITEM_FRAME_MR.bmp" />
+    <Image Include="Res\Item_frame\ITEM_FRAME_TL.bmp" />
+    <Image Include="Res\Item_frame\ITEM_FRAME_TM.bmp" />
+    <Image Include="Res\Item_frame\ITEM_FRAME_TR.bmp" />
+    <Image Include="Res\ITEM_FRAME\ITEM_NEWS_TL.bmp" />
+    <Image Include="Res\ITEM_FRAME\ITEM_NEWS_TM.bmp" />
+    <Image Include="Res\ITEM_FRAME\ITEM_NEWS_TR.bmp" />
+    <Image Include="Res\PLAZA_LOGON\kefu.bmp" />
+    <Image Include="Res\Plaza_enquire\KIND_COME_SOON.png" />
+    <Image Include="Res\LargeIcon.bmp" />
+    <Image Include="Res\Server_list\LIST_TITLE_L.png" />
+    <Image Include="Res\Server_list\LIST_TITLE_M.png" />
+    <Image Include="Res\Server_list\LIST_TITLE_R.png" />
+    <Image Include="Res\LOAD_STATUS.png" />
+    <Image Include="Res\PLATFORM_FRAME\logo.png" />
+    <Image Include="Res\Plaza_logon\Logon_titile.png" />
+    <Image Include="Res\GAME_SSC\LotteryBack.png" />
+    <Image Include="Res\NULL.ico" />
+    <Image Include="Res\LiuHeCai\num.png" />
+    <Image Include="Res\LiuHeCai\nums_2.png" />
+    <Image Include="Res\LiuHeCai\Nums_4.png" />
+    <Image Include="Res\GAME_SSC\OpenLottery.bmp" />
+    <Image Include="Res\GAME_SSC\OpenLottery.png" />
+    <Image Include="Res\PASSWORD_LEVEL.png" />
+    <Image Include="Res\Platform_frame\Platform_logo.png" />
+    <Image Include="Res\Frame_plaza\PLAZA_GROUND.bmp" />
+    <Image Include="Res\PLAZA_GROUND.bmp" />
+    <Image Include="Res\FRAME_PLAZA\PLAZA_GROUND1.bmp" />
+    <Image Include="Res\LiuHeCai\pngCenter.png" />
+    <Image Include="Res\Plaza_logon\REGISTER_TITLE.png" />
+    <Image Include="Res\REMOTE_USER_IMAGE.bmp" />
+    <Image Include="Res\PLAZA_LOGON\rubbish.bmp" />
+    <Image Include="Res\PLAZA_LOGON\rubbish.png" />
+    <Image Include="Res\SEARCH_LOGO.png" />
+    <Image Include="Res\Server_list\SERVER_LIST_ARROW.png" />
+    <Image Include="Res\Server_list\SERVER_LIST_BL.bmp" />
+    <Image Include="Res\Server_list\SERVER_LIST_BM.bmp" />
+    <Image Include="Res\Server_list\SERVER_LIST_BR.bmp" />
+    <Image Include="Res\SERVER_LIST_IMAGE.bmp" />
+    <Image Include="Res\Server_list\SERVER_LIST_ML.bmp" />
+    <Image Include="Res\Server_list\SERVER_LIST_MR.bmp" />
+    <Image Include="Res\Server_list\SERVER_LIST_TL.bmp" />
+    <Image Include="Res\Server_list\SERVER_LIST_TM.bmp" />
+    <Image Include="Res\Server_list\SERVER_LIST_TR.bmp" />
+    <Image Include="Res\Plaza_collocate\SERVICE_BAR_BT.png" />
+    <Image Include="Res\Plaza_collocate\SERVICE_BAR_IMAGE.png" />
+    <Image Include="Res\Plaza_collocate\SERVICE_BAR_LOGO.png" />
+    <Image Include="Res\SERVICE_LIST_IMAGE.bmp" />
+    <Image Include="Res\SKIN_BUTTON.png" />
+    <Image Include="Res\SKIN_COLOR.png" />
+    <Image Include="Res\SKIN_ITEM.png" />
+    <Image Include="Res\SmallIcon.bmp" />
+    <Image Include="Res\GAME_SSC\SSc_Back.png" />
+    <Image Include="Res\GAME_SSC\SSC_NUM_BALL.png" />
+    <Image Include="Res\GAME_SSC\SSC_NUM_T.png" />
+    <Image Include="Res\GAME_SSC\SScBallBack.png" />
+    <Image Include="Res\Dlg_status\STATUS_IMAGE.png" />
+    <Image Include="Res\Dlg_status\STATUS_LINE.png" />
+    <Image Include="Res\Dlg_status\STATUS_POINT.png" />
+    <Image Include="Res\Server_table\TABLE_BL.bmp" />
+    <Image Include="Res\Server_table\TABLE_BM.bmp" />
+    <Image Include="Res\Server_table\TABLE_BR.bmp" />
+    <Image Include="Res\Server_table\TABLE_GROUND.bmp" />
+    <Image Include="Res\Server_table\Table_locker.png" />
+    <Image Include="Res\Server_table\TABLE_LOGO.bmp" />
+    <Image Include="Res\Server_table\TABLE_ML.bmp" />
+    <Image Include="Res\Server_table\TABLE_MR.bmp" />
+    <Image Include="Res\Server_table\TABLE_NUMBER_BK.png" />
+    <Image Include="Res\Server_table\Table_number_nb.png" />
+    <Image Include="Res\TABLE_PASSWORD.png" />
+    <Image Include="Res\Server_table\Table_ready.png" />
+    <Image Include="Res\Server_table\TABLE_TL.bmp" />
+    <Image Include="Res\Server_table\TABLE_TM.bmp" />
+    <Image Include="Res\Server_table\TABLE_TR.bmp" />
+    <Image Include="Res\FRAME_PLAZA\TYPE_CP.png" />
+    <Image Include="Res\FRAME_PLAZA\TYPE_QP.png" />
+    <Image Include="Res\FRAME_PLAZA\TYPE_TY.png" />
+    <Image Include="Res\User_info\Under_write_l.png" />
+    <Image Include="Res\User_info\Under_write_m.png" />
+    <Image Include="Res\User_info\Under_write_r.png" />
+    <Image Include="Res\Frame_plaza\UNKNOWN_KIND.png" />
+    <Image Include="Res\Frame_plaza\UNKNOWN_SERVER.png" />
+    <Image Include="Res\Frame_plaza\UNKNOWN_TITLE.png" />
+    <Image Include="Res\GAME_SSC\USER_CONTROL.png" />
+    <Image Include="Res\USER_INFO\USER_INFO.png" />
+    <Image Include="Res\USER_INFO\USER_INFO_female.png" />
+    <Image Include="Res\User_info\USER_INFO_L.bmp" />
+    <Image Include="Res\User_info\USER_INFO_M.bmp" />
+    <Image Include="Res\USER_INFO\USER_INFO_male.png" />
+    <Image Include="Res\User_info\USER_INFO_R.bmp" />
+    <Image Include="Res\User_info\User_info_title.png" />
+    <Image Include="Res\Server_user\USER_LIST_BL.bmp" />
+    <Image Include="Res\Server_user\USER_LIST_BM.bmp" />
+    <Image Include="Res\Server_user\USER_LIST_BR.bmp" />
+    <Image Include="Res\Server_user\USER_LIST_ML.bmp" />
+    <Image Include="Res\Server_user\USER_LIST_MR.bmp" />
+    <Image Include="Res\Server_user\USER_LIST_TL.bmp" />
+    <Image Include="Res\Server_user\USER_LIST_TM.bmp" />
+    <Image Include="Res\Server_user\USER_LIST_TR.bmp" />
+    <Image Include="Res\WHISPER.ico" />
+    <Image Include="Res\Plaza_whisper\WHISPER_CONTRUL_B.bmp" />
+    <Image Include="Res\Plaza_whisper\WHISPER_CONTRUL_M.bmp" />
+    <Image Include="Res\Plaza_whisper\WHISPER_CONTRUL_T.bmp" />
+    <Image Include="Res\Plaza_whisper\WHISPER_USER_INFO_B.bmp" />
+    <Image Include="Res\Plaza_whisper\WHISPER_USER_INFO_M.bmp" />
+    <Image Include="Res\Plaza_whisper\WHISPER_USER_INFO_T.bmp" />
+    <Image Include="Res\Plaza_logon\WND_LOGON_BACK.bmp" />
+    <Image Include="Res\Plaza_logon\Wnd_logon_button.png" />
+    <Image Include="Res\Plaza_logon\WND_LOGON_LINE.png" />
+    <Image Include="Res\FRAME_AFFICHE\XWGG.png" />
+    <Image Include="Res\FRAME_AFFICHE\XWGG_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\dragging.cur" />
+    <None Include="res\GamePlaza.rc2" />
+    <None Include="Res\HAND_CUR.cur" />
+    <None Include="Res\handcur.cur" />
+    <None Include="Res\nodrag.cur" />
+    <None Include="Res\LiuHeCai\SCORE_1.cur" />
+    <None Include="Res\LiuHeCai\SCORE_10.cur" />
+    <None Include="Res\LiuHeCai\SCORE_100.cur" />
+    <None Include="Res\LiuHeCai\SCORE_1000.cur" />
+    <None Include="Res\LiuHeCai\SCORE_5.cur" />
+    <None Include="Res\LiuHeCai\SCORE_50.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GamePlaza.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="uac.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Res\click.wav" />
+    <Media Include="Res\clock.wav" />
+    <Media Include="Res\new_msg.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="GamePlaza.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

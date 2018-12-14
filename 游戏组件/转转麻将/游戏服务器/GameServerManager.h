@@ -8,8 +8,12 @@
 //////////////////////////////////////////////////////////////////////////
 
 //游戏服务器管理类
-class CGameServiceManager : public IGameServiceManager
+class CGameServiceManager : public IGameServiceManager, public IGameServiceCustomRule
 {
+	//控件变量
+protected:
+	//CDlgCustomRule						m_DlgCustomRule;				//自定规则
+
 	//变量定义
 protected:
 	tagGameServiceAttrib				m_GameServiceAttrib;			//服务属性
@@ -48,6 +52,14 @@ public:
 	///////////////////
 	virtual void *  CreateGameDataBaseEngineSink(const IID & Guid, DWORD dwQueryVer);
 
+	//配置接口
+public:
+	//获取配置
+	virtual bool SaveCustomRule(LPBYTE pcbCustomRule, WORD wCustonSize);
+	//默认配置
+	virtual bool DefaultCustomRule(LPBYTE pcbCustomRule, WORD wCustonSize);
+	//创建窗口
+	virtual HWND CreateCustomRule(CWnd * pParentWnd, CRect rcCreate, LPBYTE pcbCustomRule, WORD wCustonSize);
 };
 
 //////////////////////////////////////////////////////////////////////////

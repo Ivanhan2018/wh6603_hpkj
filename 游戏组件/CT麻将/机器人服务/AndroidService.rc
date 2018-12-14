@@ -13,11 +13,13 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// 中文(简体，中国) resources
+// 中文(中华人民共和国) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
 LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 #pragma code_page(936)
+#endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -79,8 +81,8 @@ BEGIN
         BEGIN
             VALUE "FileDescription", "机器人服务组件"
             VALUE "FileVersion", "6, 6, 0, 3"
-            VALUE "InternalName", "SparrowZZAndroid.dll"
-            VALUE "OriginalFilename", "SparrowZZAndroid.dll"
+            VALUE "InternalName", "SparrowGBAndroidService.dll"
+            VALUE "OriginalFilename", "SparrowGBAndroidService.dll"
             VALUE "ProductName", "机器人服务组件"
             VALUE "ProductVersion", "6, 6, 0, 3"
         END
@@ -91,7 +93,7 @@ BEGIN
     END
 END
 
-#endif    // 中文(简体，中国) resources
+#endif    // 中文(中华人民共和国) resources
 /////////////////////////////////////////////////////////////////////////////
 
 

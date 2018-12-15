@@ -1,0 +1,162 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameServer.rc2""  // 不是由 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,6,0,3
+ PRODUCTVERSION 6,6,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "深圳市网狐科技有限公司"
+            VALUE "FileDescription", "通比牛牛服务器"
+            VALUE "FileVersion", "6.6.0.3"
+            VALUE "InternalName", "OxSixExServer.dll"
+            VALUE "LegalCopyright", "深圳市网狐科技有限公司"
+            VALUE "OriginalFilename", "OxSixExServer.dll"
+            VALUE "ProductName", "通比牛牛服务器"
+            VALUE "ProductVersion", "6.6.0.3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CUSTOM_RULE DIALOGEX 0, 0, 361, 218
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "库存控制",IDC_STATIC,14,18,319,59
+    EDITTEXT        IDC_EDIT_ROOMSTORAGE_START,86,27,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "房间库存起始值:",IDC_STATIC,20,30,65,9
+    LTEXT           "房间库存衰减值:",IDC_STATIC,170,30,64,9
+    LTEXT           "房间库存封顶值1:",IDC_STATIC,20,46,65,9
+    LTEXT           "房间库存封顶值2:",IDC_STATIC,20,61,65,9
+    LTEXT           "赢分概率1:",IDC_STATIC,170,46,64,9
+    LTEXT           "赢分概率2:",IDC_STATIC,170,61,64,9
+    GROUPBOX        "机器人控制",IDC_STATIC,14,116,319,84
+    EDITTEXT        IDC_EDIT_ROOMSTORAGE_DEDUCT,238,27,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ROOMSTORAGE_MAX1,86,43,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ROOMSTORAGE_MUL1,238,43,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ROOMSTORAGE_MAX2,86,58,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ROOMSTORAGE_MUL2,238,58,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "机器人的分数最小值:",IDC_STATIC,27,131,80,9
+    LTEXT           "机器人的分数最大值:",IDC_STATIC,26,144,80,9
+    LTEXT           "取款最小数额:",IDC_STATIC,26,158,80,9
+    LTEXT           "取款最大数额:",IDC_STATIC,26,171,80,9
+    LTEXT           "存款百分比:",IDC_STATIC,26,184,80,9
+    LTEXT           "%",IDC_STATIC,206,184,12,11
+    LTEXT           "%",IDC_STATIC,320,59,12,11
+    LTEXT           "%",IDC_STATIC,320,44,12,11
+    EDITTEXT        IDC_ROBOT_SCOREMIN,108,128,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ROBOT_BANKERGETBANKER,108,168,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ROBOT_SCOREMAX,108,142,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ROBOT_BANKGET,108,155,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ROBOT_STOMUL,108,182,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "下注控制",IDC_STATIC,14,80,319,31
+    LTEXT           "下注倍数:",IDC_STATIC,20,93,65,9
+    EDITTEXT        IDC_EDIT_TIMES,86,91,79,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameServer.rc2"  // 不是由 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
